@@ -1,0 +1,25 @@
+Instructions for conecting to hydra/tesla machines for using GPU
+
+1) Install VSCode Remote-SSH connection
+2) ssh-keygen -t ed25519 -C "netid@vols.utk.edu" 
+   This command will prompt for filenames and passwords, you can leave them all blank. 
+3) ssh-copy-id "netid@tesla##.eecs.utk.edu" 
+4) nano ~/.ssh/config
+    Should contain: 
+    Host
+     Hostname
+     User
+
+    Add lines: 
+     IdentityFile ~/.ssh/id_ed25519
+     ForwardAgent yes
+     ForwardX11 yes
+     ForwardX11Trusted yes
+
+5) On local machine: Go to View -> Command Pallet -> Remote-SSH connect to host. 
+    Follow prompts to input passwords and do duo code. 
+6) Clone git repository: git clone git@github.com:zebulonmcknight/cs325_final.git
+7) Set up .venv and install all dependencies in requirements.txt
+8) Copy data directory using scp: scp -r data/ netid@tesla##.eecs.utk.edu
+
+    
