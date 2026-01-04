@@ -22,3 +22,8 @@ _Developer Setup Steps:_
    when you first try to run a cell in the jupyter notebook. Python version 3.13.5 is the standard.
 
 7. You'll need to setup dependencies in your .venv as well. View requirements.txt for project requirements. 
+
+
+## This is a fork of the original group project I worked on for my machine learning class
+
+My specific contributions include mostly research into ResNet architecture and testing of various components.
