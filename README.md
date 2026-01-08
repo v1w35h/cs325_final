@@ -27,3 +27,4 @@ _Developer Setup Steps:_
 ## This is a fork of the original group project I worked on for my machine learning class
 
 My specific contributions include mostly research into ResNet architecture and testing of various components.
+Achieved higher accuracies by implementing ResNet50 and RestNet101 models rather than 18. Both of these models had about the same accuracy of around 80%-82%.
